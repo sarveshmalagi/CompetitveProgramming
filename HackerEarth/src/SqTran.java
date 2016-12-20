@@ -34,7 +34,7 @@ public class SqTran {
 		int q = Integer.parseInt(br.readLine());
 		for(int i=0;i<q;i++){
 			int target = Integer.parseInt(br.readLine());
-			int index = binarySearch(A,target);
+			int index = binarySearch(A,target);  
 			if(index > 0 && index <= t-1 && A[index] >= target){
 				System.out.println(index+1);
 			}
