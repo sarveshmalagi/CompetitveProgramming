@@ -35,13 +35,15 @@ public class Tailor {
 			costs[i] = (int)Math.ceil(costs[i]*1.0/p);
 		}
 		Arrays.sort(costs);
-		int sum = 0;
-		for(int i=1;i<n;i++){
-			if(costs[i] == costs[i-1])
-				costs[i]++;
+		long sum = 0;
+        int min=0;
+		for(int i=0;i<n;i++){
+			if(costs[i] <= min){
+                costs[i] = min+1;
+            }
+            min = costs[i];
 			sum += costs[i];
-			//System.out.print(costs[i]);
 		}
-		System.out.println(sum+costs[0]);
+		System.out.println(sum);
 	}
 }
