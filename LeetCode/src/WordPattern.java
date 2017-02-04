@@ -7,7 +7,7 @@ import java.util.HashMap;
 //https://leetcode.com/problems/word-pattern/
 //try out alternatives
 public class WordPattern {
-	public boolean wordPattern(String pattern, String str) {
+       public boolean wordPattern(String pattern, String str) {
        HashMap<Character,String> hm_pattern = new HashMap<Character,String>();
        String[] str_arr = str.split(" ");
        if(str_arr.length != pattern.length()){
