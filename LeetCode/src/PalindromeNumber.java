@@ -15,7 +15,6 @@ public class PalindromeNumber {
             temp /= 10;
             nofdigits++;
         }
-        //System.out.println(nofdigits);
         temp = x;
         long reverse = 0;
         int i = 0;
@@ -24,7 +23,6 @@ public class PalindromeNumber {
             temp /= 10;
             i++;
         }
-        //System.out.println(reverse);
         while(reverse > 0){
             if(reverse%10 != x%10){
                 return false;
