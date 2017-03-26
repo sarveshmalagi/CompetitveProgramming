@@ -1,14 +1,14 @@
 import java.util.ArrayList;
 import java.util.List;
 
-class TreeNode {
+class TreeNode1 {
      int val;
-     TreeNode left;
-     TreeNode right;
-     TreeNode(int x) { val = x; }
+     TreeNode1 left;
+     TreeNode1 right;
+     TreeNode1(int x) { val = x; }
 }
 public class LargestValueInRow {
-    public void DFSMod(TreeNode root,List<Integer> maxList,int depth) { // 0 indexed
+    public void DFSMod(TreeNode1 root,List<Integer> maxList,int depth) { // 0 indexed
         if(root == null){
             return;
         }
@@ -23,8 +23,8 @@ public class LargestValueInRow {
         DFSMod(root.right,maxList,depth+1);
     }
     
-    public List<Integer> largestValues(TreeNode root) {
-        List<Integer> maxList = new ArrayList()<Integer>();
+    public List<Integer> largestValues(TreeNode1 root) {
+        List<Integer> maxList = new ArrayList<Integer>();
         DFSMod(root,maxList,0);
         return maxList;
     }
