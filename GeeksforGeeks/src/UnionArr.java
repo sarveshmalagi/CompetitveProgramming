@@ -52,7 +52,7 @@ public class UnionArr {
 			}
 			
 			while(k < m){
-				if(arr1[k] != prev){
+				if(arr1[k] != prev){				//Handle duplicates
 					System.out.print(arr1[k]+" ");
 					prev = arr1[k];
 					k++;
