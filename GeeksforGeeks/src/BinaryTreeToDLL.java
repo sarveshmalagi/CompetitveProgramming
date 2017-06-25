@@ -7,6 +7,7 @@ class NodeBST
 {
 	NodeBST left, right;
 	int data;
+	public int hd;
 	
 	NodeBST(int d)
 	{
